@@ -50,7 +50,7 @@ const Post = ({markdown, post}: InferGetStaticPropsType<typeof getStaticProps>) 
 
             <div className='min-h-screen'>
                 <div className='max-w-4xl mx-auto'>
-                    <article className='flex items-center justify-center'>
+                    <article className='flex flex-col items-center justify-center'>
                         <ReactMarkdown>{markdown}</ReactMarkdown>
                     </article>
                 </div>
