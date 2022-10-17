@@ -14,7 +14,9 @@ export const getStaticProps: GetStaticProps = async (context) => {
         props: {
             posts
         },
+        revalidate: 10
     }
+    
 }
 
 const Home: NextPage = ({posts}: InferGetStaticPropsType<typeof getStaticProps>) => {
